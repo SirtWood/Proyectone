@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>GlifiCode</title>
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+     <!-- Compiled and minified JavaScript -->
+     
+     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="proy.css">
+     <link rel="icon" href="IMG/agenda2.png">
+
+
+
+</head>
+
+<body background="IMG/textura-1.jpg">
+  <header class="fijo">
+
+    <nav class="grey darken-1">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo sombra">GlifiCode</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#modalin" class="modal-trigger">Inicio</a></li>
+            <li><a href="#modaling" class="modal-trigger">Registrarme</a></li>
+
+                              
+
+                            
+            <!-- Modal Structure -->
+            <div id="modalin" class="modal">
+              <div class="modal-content">
+
+                  <h4 class="black-text">Inicia sesión</h4>
+
+                <div class="input-field col s6">
+                  <input id="usuario" type="text" class="validate">
+                  <label for="usuario">Usuario</label>
+                </div>               
+                
+                <div class="input-field col s6">
+
+                  <input id="contraseña" type="password" class="validate" minlength="6" maxlength="12">
+                  <label for="contraseña">Contraseña</label>
+                </div>
+
+                <br>
+
+                <div class="row">
+
+                    <button class="btn waves-effect waves-light btn-large col s12" type="submit" name="action">Submit</button>
+
+                </div>
+                
+
+              </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modaling" class="modal">
+              <div class="modal-content">   
+                
+                  <h4 class="black-text">Registrate</h4>
+
+                  <div class="row">
+
+                      <div class="input-field col s12 m6">
+                          <input id="nombre" type="text" class="validate">
+                          <label for="nombre">Nombre</label>
+                        </div>               
+                        
+                        <div class="input-field col s12 m6">   
+                          <input id="apellidos" type="text" class="validate">
+                          <label for="apellidos">Apellidos</label>
+                        </div>
+
+                  </div>
+
+                   <div class="row">
+
+                      <div class="input-field col s12 m6">
+                          <input placeholder="fecha" id="fecha" type="date" class="validate">
+                          <label for="fecha">Fecha de nacimiento</label>
+                      </div>               
+                  
+                      <div class="input-field col s12 m6">
+                        <input id="e-mail" type="e-mail" class="validate">
+                        <label for="e-mail">Ingrese su correo electrónico</label>
+                      </div>  
+
+                   </div> 
+
+                   <div class="row">
+
+                      <div class="input-field col s12 m6">   
+                          <input id="contraseña2" type="password" class="validate" minlength="6" maxlength="12">
+                          <label for="contraseña2">Contraseña</label>
+                        </div>
+    
+                        <div class="input-field col s12 m6">   
+                          <input id="confirmar" type="password" class="validate" minlength="6" maxlength="12">
+                          <label for="confirmar">Confirmar contraseña</label>
+                        </div>
+
+                   </div>              
+                    
+                    
+
+                    <div class="row">
+                      <div class="col s12">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span>Acepto términos y condiciones.</span>
+                          </label>
+                        </p>
+                      
+                        <button class="btn waves-effect waves-light btn-large col s12" type="submit" name="action">Submit</button>
+
+                      </div>                       
+
+                  </div>
+          
+          </ul>
+      </div>
+      </nav>                    
+                
+  </header> 
+
+    <ul class="sidenav fondo" id="mobile-demo">
+      <li><a href="#modalin" class="white-text modal-trigger">Inicio</a></li>
+      <li><a href="#modaling" class="white-text modal-trigger">Registrate</a></li>
+    </ul>
+
+
+    <div class="contenedor">
+
+      <div class="row"> 
+        <div class="col s12 m6 offset-m3">
+                    <nav class="grey lighten-5">
+                        <div class="nav-wrapper">
+                            <form>
+                                <div class="input-field">
+                                    <input id="search" type="search" required>
+                                    <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                                    <i class="material-icons black-text">close</i>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+        </div>
+    </div>    
+
+    <div class="row">  
+        <div class="col s12 m6 espacio2">
+
+            
+            <ul class="collection">
+                <li class="collection-item avatar">
+                  <i class="material-icons circle yellow accent-4">fitness_center</i>
+                  <span class="title tamaño2">Mis prácticas</span>
+                  <p class="tamaño3">1... 2... ¡Programa! </p>
+                  <a href="#modal1" class="secondary-content modal-trigger"><i class="material-icons">grade</i></a>
+                </li>
+                
+                <li class="collection-item avatar">
+                  <i class="material-icons circle">folder</i>
+                  <span class="title tamaño2">Mi agenda de prácticas</span>
+                  <p class="tamaño3">Programate y practica.</p>
+                  <p class="tamaño4">"La práctica hace al maestro"</p>
+                  <a href="#modal2" class="secondary-content modal-trigger"><i class="material-icons">grade</i></a>
+                </li>
+
+                <li class="collection-item avatar">
+                  <i class="material-icons circle green">insert_chart</i>
+                  <span class="title tamaño2">Mis metas y proyectos</span>
+                  <p class="tamaño3">¿Qué quieres hacer a futuro? ¡Anotalo aquí!</p> 
+                  <a href="#modal3" class="secondary-content modal-trigger"><i class="material-icons">grade</i></a>
+                </li>
+
+                <li class="collection-item avatar">
+                  <i class="material-icons circle red">play_arrow</i>
+                  <span class="title tamaño2">¡Recordatorio!</span>
+                  <p class="tamaño3">Apunta tus notas y recuerda cuando lo necesites.</p>
+                  <a href="#modal4" class="secondary-content modal-trigger"><i class="material-icons">grade</i></a>
+                </li>
+            </ul>
+            
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4 class="tamaño2">Mis prácticas</h4>
+                <p class="tamaño3">1... 2... ¡Programa!</p>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <h4 class="tamaño2">Mi agenda de prácticas</h4>
+                <p class="tamaño3">Programate y practica. <br>
+                  <p class="tamaño4">"La práctica hace al maestro"</p>
+                </p>
+                
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modal3" class="modal">
+              <div class="modal-content">
+                <h4 class="tamaño2">Mis metas y proyectos</h4>
+                <p class="tamaño3">¿Qué quieres hacer a futuro? ¡Anotalo aquí!</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modal4" class="modal">
+              <div class="modal-content">
+                <h4 class="tamaño2">¡Recordatorio!</h4>
+                <p class="tamaño3">Apunta tus notas y recuerda cuando lo necesites.</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
+
+        </div> 
+
+        <div class="col s12 m6 espacio center-align">    
+        <img src="IMG/agenda.png" alt="Agenda" class="responsive-img">
+        </div>       
+    </div>
+       
+    <footer class="page-footer grey darken-3">
+            
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <div espacios>
+                <a class="grey-text text-lighten-3" href="https://www.facebook.com/" target="_blank"><img src="IMG/FB.png" alt="" class=" circle z-depth-2"></a>
+                <a class="grey-text text-lighten-3" href="https://twitter.com/" target="_blank"><img src="IMG/Twitter.png" alt="Twitter icono" class=" circle z-depth-2"></a>
+                <a class="grey-text text-lighten-3" href="https://www.instagram.com/" target="_blank"><img src="IMG/Insta.png" alt="Facebook icono" class=" circle z-depth-2"></a>
+              </div>  
+            </div>
+            <div class="col l5 offset-l1 s12">
+              
+                
+
+              <h5 class="white-text tamaño">Siguenos en nuestras redes sociales.</h5>
+              <p class="grey-text text-lighten-4"> © Todos los derechos reservados 2019.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    </div>
+      
+        
+      <script src="JS/jquery-3.3.1.min.js"></script>       
+      <script src="JS/materialize.min.js"></script> 
+      <script>
+          $(document).ready(function(){
+          $('.sidenav').sidenav();
+          });
+
+          $(document).ready(function(){
+          $('.modal').modal();
+          });
+      </script>
+
+      
+
+</body>
+
+
+
+
+</html>
+

@@ -1,0 +1,76 @@
+body{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding: o;
+    background-color: #cfd8dc;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.fijo{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.contenedor{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+
+.sombra{
+    text-shadow: 3px 3px 3px  #212121;
+}
+
+.espacio{
+    padding: 50px 0px 0px 0px !important;
+}
+
+.espacio2{
+    padding: 170px 0px 0px 0px !important;
+}
+
+.espacios{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.tamaño{
+    font-size: 30px;
+
+}
+
+.tamaño2{
+    font-size: 25px !important;
+}
+
+.tamaño3{
+    font-size: 16px !important;
+}
+
+.tamaño4{
+    font-size: 14px !important;
+}
+
+.color{
+    font-size: 20px !important;
+    color: black !important;
+}
+
+.fondo{
+    background-color: #009696 !important;
+}
+
+@media screen and (max-width: 480px){
+    .espacio2{
+        padding: 0px !important;
+    }
+}
+
+
+
